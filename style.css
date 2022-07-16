@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.user-form {
+    max-width: 700px;
+}
+.user-form input {
+  
+    background: rgb(17, 15, 15);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: aquamarine;
+    letter-spacing: 1px;
+    font-size: 20px;
+    box-shadow:inset 0 0 35px 0 rgb(187, 237, 221);
+    padding:30px 20px;
+
+}
+.user-form input::placeholder {
+    color: aquamarine
+}
+.card {
+    max-width: 800px;
+    box-shadow:inset 0 0 35px 0 rgb(187, 237, 221);
+    border-radius: 10px;
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+}
+.avatar {
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+    height: 200px;
+    width: 200px;
+}
+.user-info {
+    padding: 10px;
+    color: aquamarine;
+}
+.user-info h2 {
+    color: aquamarine;
+}
+.user-info ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+}
+.user-info ul  li {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+   
+    color: aquamarine;
+}
+.user-info ul  li strong {
+    margin-right: 10px;
+    font-size: 15px;
+    color: aquamarine;
+}
+
+/* last 5 github repository */
+
+.repo{
+    color: red;
+    padding:0 10px 0 0;
+    text-decoration: none;
+    color: aquamarine;
+}
+/* h1 use me only for error msg */
+h1{
+    color:red;
+    text-transform: capitalize;
+    font-size: 27px;
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+    box-shadow:inset 0 0 35px 0 rgb(187, 237, 221);
+}
+
+
+@media only screen and (max-width: 500px) {
+   .card{
+    width: 90%;
+    display:block;
+    padding: auto;
+    margin: auto;
+   }
+   .avatar {
+    height: auto;
+    width: 100%;
+    border-radius:5px;
+   }
+  }
+  /* @media only screen and (max-width: 400px) {
+    .card{
+    max-width: 260px;
+     display:block;
+     padding: auto;
+     margin: auto;
+    }
+    .avatar {
+     width: 100%;
+     border-radius:5px;
+     background-size: cover;
+    }
+    .user-info ul  li{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+   } */
+
+
+
+
